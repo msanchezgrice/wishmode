@@ -40,8 +40,8 @@ export default function LandingPage() {
             </div>
             <div className="aspect-[3/4] bg-neutral-300 rounded-lg overflow-hidden relative shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1517976487492-5750f3195933?w=400&q=80"
-                alt="Rocket Launch"
+                src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&q=80"
+                alt="Hiking"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 33vw"
