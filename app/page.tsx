@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function LandingPage() {
   return (
@@ -26,11 +27,35 @@ export default function LandingPage() {
 
         {/* Visual Element: Example Cards Preview */}
         <div className="mt-16 relative">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neutral-50 to-white pointer-events-none" />
-          <div className="grid grid-cols-3 gap-4 opacity-60">
-            <div className="aspect-[3/4] bg-neutral-200 rounded-lg" />
-            <div className="aspect-[3/4] bg-neutral-300 rounded-lg" />
-            <div className="aspect-[3/4] bg-neutral-200 rounded-lg" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neutral-50 to-white pointer-events-none z-10" />
+          <div className="grid grid-cols-3 gap-4 opacity-70">
+            <div className="aspect-[3/4] bg-neutral-200 rounded-lg overflow-hidden relative">
+              <Image
+                src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&q=80"
+                alt="Camping"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="aspect-[3/4] bg-neutral-300 rounded-lg overflow-hidden relative">
+              <Image
+                src="https://images.unsplash.com/photo-1541873676-a18131494184?w=400&q=80"
+                alt="Space Center"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="aspect-[3/4] bg-neutral-200 rounded-lg overflow-hidden relative">
+              <Image
+                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&q=80"
+                alt="Beach"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
           </div>
         </div>
       </div>
