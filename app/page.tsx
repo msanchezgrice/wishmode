@@ -27,9 +27,9 @@ export default function LandingPage() {
 
         {/* Visual Element: Example Cards Preview */}
         <div className="mt-16 relative">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neutral-50 to-white pointer-events-none z-10" />
-          <div className="grid grid-cols-3 gap-4 opacity-70">
-            <div className="aspect-[3/4] bg-neutral-200 rounded-lg overflow-hidden relative">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-70% to-white pointer-events-none z-10" />
+          <div className="grid grid-cols-3 gap-4 opacity-90">
+            <div className="aspect-[3/4] bg-neutral-200 rounded-lg overflow-hidden relative shadow-lg">
               <Image
                 src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&q=80"
                 alt="Camping"
@@ -38,16 +38,16 @@ export default function LandingPage() {
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
-            <div className="aspect-[3/4] bg-neutral-300 rounded-lg overflow-hidden relative">
+            <div className="aspect-[3/4] bg-neutral-300 rounded-lg overflow-hidden relative shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1541873676-a18131494184?w=400&q=80"
-                alt="Space Center"
+                src="https://images.unsplash.com/photo-1517976487492-5750f3195933?w=400&q=80"
+                alt="Rocket Launch"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
-            <div className="aspect-[3/4] bg-neutral-200 rounded-lg overflow-hidden relative">
+            <div className="aspect-[3/4] bg-neutral-200 rounded-lg overflow-hidden relative shadow-lg">
               <Image
                 src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&q=80"
                 alt="Beach"
