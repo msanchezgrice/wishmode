@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 16px;
+}
+
+body {
+  @apply bg-neutral-50 text-neutral-900;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-sm border border-neutral-200 overflow-hidden;
+}
+
+.btn {
+  @apply inline-flex items-center gap-2 px-3 py-2 rounded-xl border border-neutral-300 bg-white hover:bg-neutral-100 text-sm;
+}
+.btn-primary {
+  @apply bg-neutral-900 text-white border-neutral-900 hover:bg-black;
+}
+
+/* Masonry */
+.masonry {
+  column-gap: 1rem;
+}
+.masonry > * {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+@media (min-width: 640px) {
+  .masonry { column-count: 2; }
+}
+@media (min-width: 1024px) {
+  .masonry { column-count: 3; }
+}
