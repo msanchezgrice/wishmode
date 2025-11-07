@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { Card as TCard } from '@/lib/types';
 
 export default function Card({ card, onOpen }: { card: TCard; onOpen: (card: TCard) => void }) {
-  const isAiImage = card.aiImageUrl && card.imageUrl === card.aiImageUrl;
-  const isPlacesImage = card.placesImageUrl && card.imageUrl === card.placesImageUrl;
+  const isAiImage = !!(card.aiImageUrl && card.imageUrl === card.aiImageUrl);
+  const isPlacesImage = !!(card.placesImageUrl && card.imageUrl === card.placesImageUrl);
 
   return (
     <div className="card overflow-hidden">
